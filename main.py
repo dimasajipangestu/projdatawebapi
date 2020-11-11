@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 
 def read_file(country_code):
-    with open("./dataset2/"+country_code+".json", "r") as read_file:
+    with open("./dataset/"+country_code+".json", "r") as read_file:
         data = json.load(read_file)
         return(data)
 
